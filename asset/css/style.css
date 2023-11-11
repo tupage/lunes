@@ -1,0 +1,91 @@
+      html,
+      body {
+          height: 100%;
+          margin: 0;
+          font-family: Arial, sans-serif;
+      }
+
+      body {
+          display: flex;
+          flex-direction: column;
+        background-color:#333; 
+      }
+
+      header {
+          background-color: orange;
+          padding: 10px;
+          text-align: center;
+      }
+
+      .logo {
+          width: 100px;
+          height: 100px;
+          opacity: 1;
+          animation: fadeLogo 8s infinite;
+      }
+
+      @keyframes fadeLogo {
+
+          0%,
+          100% {
+              opacity: 1;
+          }
+
+          50% {
+              opacity: 0;
+          }
+      }
+
+      .gallery {
+          text-align: center;
+          margin: 20px;
+          flex-grow: 1;
+      }
+
+      .gallery-title {
+          font-size: 1.5em;
+          color: #333;
+      }
+
+      .gallery a {
+          text-decoration: none;
+          margin: 10px;
+          display: block;
+      }
+
+      .gallery img {
+          width: 100%;
+          max-width: 600px;
+          height: auto;
+          border: 2px solid #333;
+          transition: opacity 0.5s ease-in-out;
+          margin-bottom: 10px;
+      }
+
+      .gallery img:hover {
+          opacity: 0.7;
+      }
+
+      .youtube-button {
+          background-color: #ff0000;
+          color: white;
+          padding: 10px;
+          border: none;
+          text-decoration: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease-in-out;
+          display: block;
+          margin: 0 auto;
+        border-radius: 50px;
+      }
+
+      .youtube-button:hover {
+          background-color: #cc0000;
+      }
+
+      footer {
+        background-color: orange;
+          padding: 10px;
+          text-align: center;
+          color: white;
+      }
